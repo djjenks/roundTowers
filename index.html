@@ -1,0 +1,582 @@
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US"
+xmlns:fb="https://www.facebook.com/2008/fbml">
+<head> 
+<meta charset="UTF-8"/>
+<title>Daves jQuery Mobile Web App</title>
+
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<!-- <meta name = "viewport" content = "user-scalable=no,width=device-width" /> -->
+
+<!-- <script src="js/jquery-1.5.min.js" type="text/javascript"></script>  -->
+jquery-1.11.3.min
+<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="js/jquery.mobile-1.3.0.min.js" type="text/javascript"></script>
+<script src="js/contact.js" type="text/javascript"></script>
+<script src="js/contact_test.js" type="text/javascript"></script>
+<link href="css/jquery.mobile.structure-arascolor1.css" rel="stylesheet" type="text/css"/>
+ <link href="css/towers.css" rel="stylesheet" type="text/css"/>
+<!-- <link href="css/arasColor2.css" rel="stylesheet" type="text/css"/> -->
+
+<link rel="stylesheet" href="css/arasStyles.css" />
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<script src="js/arasScripts.js" type="text/javascript"></script>
+<script type="text/javascript" charset="utf-8" src="cordova/cordova.js"></script>
+</head>
+
+
+<body onLoad="setupPages();"> 
+
+<!--  Splash screen page 
+<div data-role="page" id="splash" class="splash1" data-theme="a">
+
+		<div data-role="header" data-position="fixed" data-id="ac_header" data-theme="a">
+			<h1>Áras Chrónáin Ionad Cultúir </h1>
+		</div>
+		
+		<div data-role="content">	
+			<img class="splashImage" src="arasimage/MCLogo.jpg" alt="Big Boat"> 				
+	    </div>
+		
+		<!-- <div data-role="footer" data-position="fixed" data-id="ac_footer" data-theme="a"  >		
+			<div data-role="navbar">
+				<ul>
+					<li>	<a href="#"  data-role="button" data-icon="gear">Events</a></li>
+					<li>	<a href="#"  data-icon="edit" data-role="button" >Classes</a></li>
+					<li>	<a href="#"   data-icon="arrow-r" data-role="button">Facilities</a></li>
+					<li>	<a href="#"   data-icon="info" data-role="button">Membership</a></li>
+				</ul>
+			</div>
+		</div> 
+</div>	-->
+
+
+<!--  Home screen page -->
+
+<div data-role="page" id="home" data-theme="a">
+		
+		<div data-role="header" data-position="fixed" data-id="ac_header" data-theme="a">
+			<h1>Round Towers</h1>
+		</div>
+		
+		<div id="content" data-role="content" >
+			<img class="homeImage" src="towersimage/towers_logo_area.png" alt="Big Boat"> 	
+
+				<div data-role="controlgroup">	
+				<a href="#irishClasses" data-icon="plus" data-role="button" >Irish Classes&nbsp;<i></i>Ranganna gaeilge</a>	
+				<a href="#musicClasses"  data-icon="plus"data-role="button" >Music Classes&nbsp;<i>Ranganna ceoil</i></a>	
+				<a href="#setDanceClasses" data-icon="plus" data-role="button" >Set Dancing Classes&nbsp;<i>Ranganna rince seite</i></a>
+				<a href="#" data-icon="plus" data-role="button" >Other Classes&nbsp;<i>Ranganna eile</i></a>	
+			</div>
+	    </div>
+		
+		
+		 <div data-role="footer" data-position="fixed" data-id="ac_footer" data-theme="a"  >
+		
+			<div data-role="navbar">
+				<ul id="buttonId">
+					<li id="add1">	<a href="#Events"   data-icon="check" data-role="button" >Lotto</a></li>
+					<li  id= "add2">	<a href="#Classes" data-icon="edit" data-role="button">Results</a></li>
+					<li  id= "add3">	<a href="#Facilities"   data-icon="gear" data-role="button">Club News</a></li>
+					<li  id="add4">	<a  id="fade" data-role="button" data-icon="arrow-r">Place</a></li>
+					<li id= "add5">	<a  id="fade2" data-role="button" data-icon="back">Place</a></li>
+					<li id= "add6">	<a href="#FindUs"   data-role="button" data-icon="search">Place</a></li>
+					<li id= "add7">	<a href="#Membership"  data-icon="info" data-role="button" >Place</a></li>
+					<li id= "add8">	<a href="#Videos"   data-icon="star" data-role="button">Place</a></li>			
+				</ul>
+			</div>
+			
+		</div> 
+</div>	
+
+
+<!--  Events screen page -->
+
+	
+<div data-role="page" id="Events" data-theme="a">
+
+		<div data-role="header" data-position="fixed" data-id="ac_header" data-theme="a">
+			<h1>Imeachtaí&nbsp;<i>Events</i></h1>
+			<a href="#home" data-icon="home" data-iconpos="notext"></a>
+		</div>
+		
+		<div data-role="content" >
+		<img class="homeImage" src="arasimage/aclogo.png" alt="Big Boat"> 
+		<a href="#"  data-role="button" >Upcoming Events&nbsp;<i>Imeachtaí ag teacht aníos</i></a>
+			
+				<div data-role="collapsible-set">
+				
+					<div class="background"data-role="collapsible" data-collapsed="false">
+						<h3>Upcoming</h3>
+						<div id="eventsList">
+					</div>	
+				</div>
+
+				</div>
+	    </div>
+
+		<div data-role="footer" data-position="fixed" data-id="ac_footer" data-theme="a"  >
+		
+			<div data-role="navbar">
+				<ul id="buttonId1">								
+					<li id="add11">	<a href="#Events"   data-icon="check" data-role="button" >Imeachtaí </a></li>
+					<li  id= "add21">	<a href="#Classes" data-icon="edit" data-role="button">Ranganna</a></li>
+					<li  id= "add31">	<a href="#Facilities"   data-icon="gear" data-role="button">Áiseanna</a></li>
+					<li  id="add41">	<a  id="fade1" data-role="button" data-icon="arrow-r">Níos mó</a></li>
+					<li id= "add51">	<a  id="fade21" data-role="button" data-icon="back">Ar ais</a></li>
+					<li id= "add61">	<a href="#FindUs"   data-role="button" data-icon="search">Treoracha</a></li>
+					<li id= "add71">	<a href="#Membership"  data-icon="info" data-role="button" >Ballríocht</a></li>
+					<li id= "add81">	<a href="#Videos"   data-icon="star" data-role="button">Físeán</a></li>				
+				</ul>
+			</div>
+			
+		</div>
+		
+</div>	
+
+
+<!--  Classes screen page -->
+
+
+<div data-role="page" id="Classes" data-theme="a">
+
+		<div data-role="header" data-position="fixed"  data-id="ac_header" data-theme="a">
+			<h1>Ranganna&nbsp;<i>Classes</i></h1>
+			<a href="#home" data-icon="home" data-iconpos="notext"></a>
+		</div>
+		
+		<div data-role="content">
+			<img class="homeImage" src="arasimage/aclogo.png" alt="Big Boat"> 
+			<a href="#"  data-role="button" >Classes Available&nbsp;<i>Ranganna ar Fáil</i></a>
+	
+	
+			<div data-role="controlgroup">	
+				<a href="#irishClasses" data-icon="plus" data-role="button" >Irish Classes&nbsp;<i></i>Ranganna gaeilge</a>	
+				<a href="#musicClasses"  data-icon="plus"data-role="button" >Music Classes&nbsp;<i>Ranganna ceoil</i></a>	
+				<a href="#setDanceClasses" data-icon="plus" data-role="button" >Set Dancing Classes&nbsp;<i>Ranganna rince seite</i></a>
+				<a href="#" data-icon="plus" data-role="button" >Other Classes&nbsp;<i>Ranganna eile</i></a>	
+			</div>
+	
+		</div>	
+	
+	<div data-role="footer" data-position="fixed" data-id="ac_footer" data-theme="a"  >
+		
+		<div data-role="navbar">
+			<ul id="buttonId2">							
+				<li id="add12">	<a href="#Events"   data-icon="check" data-role="button" >Imeachtaí </a></li>
+					<li  id= "add22">	<a href="#Classes" data-icon="edit" data-role="button">Ranganna</a></li>
+					<li  id= "add32">	<a href="#Facilities"   data-icon="gear" data-role="button">Áiseanna</a></li>
+					<li  id="add42">	<a  id="fade20" data-role="button" data-icon="arrow-r">Níos mó</a></li>
+					<li id= "add52">	<a  id="fade22" data-role="button" data-icon="back">Ar ais</a></li>
+					<li id= "add62">	<a href="#FindUs"   data-role="button" data-icon="search">Treoracha</a></li>
+					<li id= "add72">	<a href="#Membership"  data-icon="info" data-role="button" >Ballríocht</a></li>
+					<li id= "add82">	<a href="#Videos"   data-icon="star" data-role="button">Físeán</a></li>		
+			</ul>
+		</div>
+		
+	</div>
+	
+</div>
+
+<!--  Facilities screen page -->
+
+<div data-role="page" id="Facilities" data-theme="a">
+	
+		<div data-role="header" data-position="fixed" data-id="ac_header" data-theme="a">
+			<h1>Facilites&nbsp;<i>Áiseanna</i></h1>
+			<a href="#home" data-icon="home" data-iconpos="notext"></a>		
+		</div>
+		
+		<div data-role="content">
+			<img class="homeImage" src="arasimage/aclogo.png" alt="Big Boat"> 	
+		
+			<div data-role="collapsible-set">
+				<div class="background"data-role="collapsible">
+					<h3>Music Sessions&nbsp;<i>Seisiúin cheoil</i></h3>
+					<div  id="musicSessions">
+					</div>	
+				</div>
+				<div class="background" data-role="collapsible">
+					<h3>Studio&nbsp;<i>Stiúideo</i></h3>
+					<div  id="studioInfo">
+					</div>
+				</div>	
+				<div class="background" data-role="collapsible">
+					<h3>Venue Hire&nbsp;<i>Fruiliú ionaid</i></h3>
+					<div  id="venueHire">
+					</div>		
+				</div>
+	
+			</div> <!-- end collapsible set-->	
+			
+	
+		<!-- <a href="#arasContact"  data-role="button" >Contact us&nbsp;<i>Déan teagmháil linn</i></a>	-->
+		<a href="mailto:djjenkins21@hotmail.com?Subject=App_Query" target="_top" data-role="button" data-theme="a" data-iconpos="right" id="send-feedback1">Contact us&nbsp;<i>Déan teagmháil linn</i></a>	
+		
+	    </div><!-- end  content-->	
+	    
+	    
+	<div data-role="footer" data-position="fixed" data-id="ac_footer" data-theme="a"  >
+		
+		<div data-role="navbar">
+			<ul id="buttonId3">							
+					<li id="add13">	<a href="#Events"   data-icon="check" data-role="button" >Imeachtaí </a></li>
+					<li  id= "add23">	<a href="#Classes" data-icon="edit" data-role="button">Ranganna</a></li>
+					<li  id= "add33">	<a href="#Facilities"   data-icon="gear" data-role="button">Áiseanna</a></li>
+					<li  id="add43">	<a  id="fade3" data-role="button" data-icon="arrow-r">Níos mó</a></li>
+					<li id= "add53">	<a  id="fade23" data-role="button" data-icon="back">Ar ais</a></li>
+					<li id= "add63">	<a href="#FindUs"   data-role="button" data-icon="search">Treoracha</a></li>
+					<li id= "add73">	<a href="#Membership"  data-icon="info" data-role="button" >Ballríocht</a></li>
+					<li id= "add83">	<a href="#Videos"   data-icon="star" data-role="button">Físeán</a></li>			
+			</ul>
+		</div>
+	</div>
+		
+		
+</div>	
+
+<!--  Membership screen page -->
+
+<div data-role="page" id="Membership" data-theme="a">
+	
+	<div data-role="header" data-position="fixed" data-id="ac_header" data-theme="a">
+		<h1>Membership&nbsp;<i>Ballríocht</i></h1>
+		<a href="#home" data-icon="home" data-iconpos="notext"></a>		
+	</div>
+	
+	
+	<div data-role="content">
+		<img class="homeImage" src="arasimage/aclogo.png" alt="Big Boat"> 
+	
+				<div data-role="collapsible-set">
+					<div class="background"data-role="collapsible">
+						<h3>Why Join?&nbsp;<i>Cén fáth a bheith páirteach</i></h3>
+						<div  id="whyJoin">
+						</div>	
+					</div>
+					<div class="background" data-role="collapsible">
+						<h3>How to apply&nbsp;<i>Conas iarratas a dhéanamh</i></h3>
+						<div  id="howToApply">
+						</div>
+					</div>	
+					
+
+					<a href="mailto:djjenkins21@hotmail.com?Subject=App_Query" target="_top" data-role="button" data-theme="a" data-iconpos="right" id="send-feedback1">Contact us&nbsp;<i>Déan teagmháil linn</i></a>	
+
+	
+				</div> <!-- end collapsible set-->	
+			
+		
+	 </div>
+	 
+	 
+	<div data-role="footer" data-position="fixed" data-id="ac_footer" data-theme="a"  >
+		
+		<div data-role="navbar">
+		<ul id="buttonId4">			
+					<li id="add14">	<a href="#Events"   data-icon="check" data-role="button" >Imeachtaí </a></li>
+					<li  id= "add24">	<a href="#Classes" data-icon="edit" data-role="button">Ranganna</a></li>
+					<li  id= "add34">	<a href="#Facilities"   data-icon="gear" data-role="button">Áiseanna</a></li>
+					<li  id="add44">	<a  id="fade4" data-role="button" data-icon="arrow-r">Níos mó</a></li>
+					<li id= "add54">	<a  id="fade24" data-role="button" data-icon="back">Ar ais</a></li>
+					<li id= "add64">	<a href="#FindUs"   data-role="button" data-icon="search">Treoracha</a></li>
+					<li id= "add74">	<a href="#Membership"  data-icon="info" data-role="button" >Ballríocht</a></li>
+					<li id= "add84">	<a href="#Videos"   data-icon="star" data-role="button">Físeán</a></li>		
+		</ul>
+		</div>
+	</div>
+	
+</div>
+
+<!--  Videos screen page -->	
+
+<div data-role="page" id="Videos" data-theme="a">
+
+		<div data-role="header" data-position="fixed" data-id="ac_header" data-theme="a">
+			<h1>Videos&nbsp;<i>Físeán</i></h1>
+			<a href="#home" data-icon="home" data-iconpos="notext"></a>		
+		</div>
+		
+			<div data-role="content">
+				<img class="homeImage" src="arasimage/aclogo.png" alt="Big Boat"> 
+	
+				 <div class="ui-grid-a" id="videolist">	
+					<!-- <div class="ui-block-a"></div>   -->
+				</div> 
+				<!--<div id="videolist">	
+
+				</div> -->
+	    	</div>
+	    	
+	    	
+		<div data-role="footer" data-position="fixed" data-id="ac_footer" data-theme="a"  >
+		
+			<div data-role="navbar">
+				<ul id="buttonId6">								
+					<li id="add16">	<a href="#Events"   data-icon="check" data-role="button" >Imeachtaí </a></li>
+					<li  id= "add26">	<a href="#Classes" data-icon="edit" data-role="button">Ranganna</a></li>
+					<li  id= "add36">	<a href="#Facilities"   data-icon="gear" data-role="button">Áiseanna</a></li>
+					<li  id="add46">	<a  id="fade6" data-role="button" data-icon="arrow-r">Níos mó</a></li>
+					<li id= "add56">	<a  id="fade26" data-role="button" data-icon="back">Ar ais</a></li>
+					<li id= "add66">	<a href="#FindUs"   data-role="button" data-icon="search">Treoracha</a></li>
+					<li id= "add76">	<a href="#Membership"  data-icon="info" data-role="button" >Ballríocht</a></li>
+					<li id= "add86">	<a href="#Videos"   data-icon="star" data-role="button">Físeán</a></li>				
+				</ul>
+			</div>
+		</div>
+		
+</div>	
+
+<!-- video player -->
+
+<div id="videoplayer" data-role="page" data-theme="a">
+
+		<div data-role="header" data-position="fixed" data-theme="a">
+			<a href="#Videos" data-transition="fade" data-icon="back" data-iconpos="notext" data-direction="reverse">Videos</a>
+			<h1>Videos&nbsp;<i>Físeán</i></h1>
+		</div><!-- header -->
+
+		<div data-role="content">
+			<div id="myplayer">
+			</div>	
+		</div> <!-- content -->
+
+</div> <!-- page -->
+<!-- end of video player -->
+
+<!--  Irish Classes screen page -->
+
+<div data-role="page" id="irishClasses" data-theme="a">
+
+	<div data-role="header" data-position="fixed" data-id="ac_header" data-theme="a">
+		<h1>Irish Classes&nbsp;<i>Ranganna gaeilge</i></h1>
+		<a href="#home" data-icon="home" data-iconpos="notext"></a>
+	</div>
+	
+	<div data-role="content">
+		<img class="homeImage" src="arasimage/aclogo.png" alt="Big Boat"> 
+		<div data-role="collapsible-set">
+			<div class="background"data-role="collapsible">
+				<h3>Morning&nbsp;<i>Maidin</i></h3>
+				<div  id="morningClass">
+				</div>	
+			</div>
+			<div class="background" data-role="collapsible">
+				<h3>Evening&nbsp;<i>Tráthnóna</i></h3>
+				<div  id="eveningClass">
+				</div>	
+			</div>
+			<div class="background"data-role="collapsible">
+				<h3>Intensive&nbsp;<i>Dian</i></h3>
+				<div  id="intensive">
+				</div>	
+			</div>	
+		</div>	
+	</div>
+	
+	
+	<div data-role="footer" data-position="fixed" data-id="ac_footer" data-theme="a">		
+		<div data-role="navbar">
+			<ul id="buttonId7">								
+					<li id="add17">	<a href="#Events"   data-icon="check" data-role="button" >Imeachtaí </a></li>
+					<li  id= "add27">	<a href="#Classes" data-icon="edit" data-role="button">Ranganna</a></li>
+					<li  id= "add37">	<a href="#Facilities"   data-icon="gear" data-role="button">Áiseanna</a></li>
+					<li  id="add47">	<a  id="fade7" data-role="button" data-icon="arrow-r">Níos mó</a></li>
+					<li id= "add57">	<a  id="fade27" data-role="button" data-icon="back">Ar ais</a></li>
+					<li id= "add67">	<a href="#FindUs"   data-role="button" data-icon="search">Treoracha</a></li>
+					<li id= "add77">	<a href="#Membership"  data-icon="info" data-role="button" >Ballríocht</a></li>
+					<li id= "add87">	<a href="#Videos"   data-icon="star" data-role="button">Físeán</a></li>				
+			</ul>
+		</div>
+	</div>
+	
+</div>	
+
+<!--  Music classes -->
+
+<div data-role="page" id="musicClasses" data-theme="a">
+
+
+	<div data-role="header" data-position="fixed" data-id="ac_header" data-theme="a">
+		<h1>Music Classes&nbsp;<i>Ranganna ceoil</i></h1>
+		<a href="#Classes" data-icon="back" data-iconpos="notext"></a>
+	</div>
+	
+	<div data-role="content">
+		<img  class="homeImage" src="arasimage/aclogo.png" alt="Big Boat"> 	
+		<div data-role="collapsible-set">
+			<div class="background"data-role="collapsible">
+				<h3>Irish Traditional&nbsp;<i>traidisiúnta</i></h3>
+				<div  id="musicClass">
+				</div>	
+			</div>
+			<div class="background" data-role="collapsible">
+				<h3>Other&nbsp;<i>Eile</i></h3>
+				<div  id="otherMusicClass">
+				</div>	
+			</div>
+		
+	</div>	
+			
+		
+	</div>
+		<div data-role="footer" data-position="fixed" data-id="ac_footer" data-theme="a">
+		
+			<div>
+				<p>Áras Chrónáin Ionad Cultúir</p>
+			</div>
+		</div>
+		
+		
+</div>
+
+<!--  Set Dancing screen page -->
+
+<div data-role="page" id="setDanceClasses" data-theme="a">
+
+	<div data-role="header" data-position="fixed" data-id="ac_header" data-theme="a">
+		<h1>Set Dancing Classes&nbsp;<i></i></h1>
+		<a href="#Classes" data-icon="back" data-iconpos="notext"></a>		
+		</div>
+		
+	<div data-role="content">
+		<img  class="homeImage" src="arasimage/aclogo.png" alt="Big Boat"> 
+		
+		<div data-role="collapsible-set">
+		<div class="background"data-role="collapsible" data-collapsed="false">
+			<h3>Set Dancing&nbsp;<i>Ranganna rince seite</i></h3>
+			<div  id="setDancing">
+			</div>	
+		</div>
+		<div class="background" data-role="collapsible">
+			<h3>Set Dancing for kids&nbsp;<i>Leanaí atá leagtha damhsa</i></h3>
+			<div  id="kidsSetDancing">
+			</div>	
+		</div>
+		
+	</div>			
+</div>
+
+	<div data-role="footer" data-position="fixed" data-id="ac_footer" data-theme="a">
+		
+		<div >
+			<p>Áras Chrónáin Ionad Cultúir</p>
+		</div>
+		</div>
+		
+</div>
+
+<!--  Find us screen page -->
+
+<div data-role="page" id="FindUs" data-theme="a">
+
+		<div data-role="header" data-position="fixed" data-id="ac_header" data-theme="a">
+		<h1>Find Us&nbsp;<i>Treoracha</i></h1>
+		<a href="#home" data-icon="home" data-iconpos="notext"></a>		
+		</div>
+		
+		<div data-role="content">
+			<img class="homeImage" src="arasimage/aclogo.png" alt="Big Boat"> 
+			
+			<div class="background"data-role="collapsible" data-collapsed="false">
+			<h3>How to Find Us&nbsp;<i>Conas teacht orainn</i></h3>
+				<iframe width="90%" height="90%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ie/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=%C3%81ras+Chr%C3%B3n%C3%A1in+Irish+Cultural+Centre,+South+Dublin&amp;aq=3&amp;oq=Aras&amp;sll=53.3834,-8.21775&amp;sspn=9.219919,18.918457&amp;ie=UTF8&amp;hq=%C3%81ras+Chr%C3%B3n%C3%A1in+Irish+Cultural+Centre,&amp;hnear=South+Dublin,+County+Dublin&amp;t=m&amp;ll=53.323042,-6.392626&amp;spn=0.092282,0.092307&amp;output=embed"></iframe><br />
+	 		</div>
+	 	</div>
+	   
+
+	<div data-role="footer" data-position="fixed" data-id="ac_footer" data-theme="a"  >
+		
+		<div data-role="navbar">
+			<ul id="buttonId5">							
+					<li id="add15">	<a href="#Events"   data-icon="check" data-role="button" >Imeachtaí </a></li>
+					<li  id= "add25">	<a href="#Classes" data-icon="edit" data-role="button">Ranganna</a></li>
+					<li  id= "add35">	<a href="#Facilities"   data-icon="gear" data-role="button">Áiseanna</a></li>
+					<li  id="add45">	<a  id="fade5" data-role="button" data-icon="arrow-r">Níos mó</a></li>
+					<li id= "add55">	<a  id="fade25" data-role="button" data-icon="back">Ar ais</a></li>
+					<li id= "add65">	<a href="#FindUs"   data-role="button" data-icon="search">Treoracha</a></li>
+					<li id= "add75">	<a href="#Membership"  data-icon="info" data-role="button" >Ballríocht</a></li>
+					<li id= "add85">	<a href="#Videos"   data-icon="star" data-role="button">Físeán</a></li>		
+			</ul>
+		</div>
+		</div>
+		
+</div>	
+
+<!--  Contact form page screen page -->
+
+<div data-role="page" id="arasContact" data-theme="a">
+
+	<div data-role="header" data-position="fixed" data-id="ac_header" data-theme="a">
+		<h1>Contact Us&nbsp;<i>Déan teagmháil linn</i></h1>
+		<a href="#home" data-icon="home" data-iconpos="notext"></a>
+	</div>
+	
+	<div data-role="content">
+		<img class="homeImage" src="arasimage/aclogo.png" alt="Big Boat"> 
+		
+			<div data-role="popup" id="myPopupDiv">
+				<a id="closePopup" href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-left">Close</a>
+				<p>Thank you. Your message has been sent.&nbsp;<i>Tá do theachtaireacht seolta</i><p>
+			</div>
+				
+		
+		<div class="contact-form">
+		
+			<div data-role="collapsible-set">
+	    		 <div class="background"data-role="collapsible" data-collapsed="false">
+					<h3>Contact Form&nbsp;<i>Foirm Teagmháil</i></h3>	
+						
+			<div class="contact-form">
+			<div data-role="fieldcontain" class="text-field" >
+				
+				<input type="text" name="firstname" value="" placeholder="Name"  id="firstname" />
+			</div>
+			
+			<div data-role="fieldcontain" class="text-field">
+				
+				<input type="email" name="email" value="" placeholder="Email Address" id="email"  />
+			</div>
+			<div data-role="fieldcontain" class="text-field">
+				<input type="number" name="mobilephone" value="" placeholder="Mobile Number" id="mobilephone" />
+			</div>
+			
+			<div data-role="fieldcontain">
+				
+			<!--	 <textarea name="message" id="message" value="" placeholder="message" ></textarea> -->
+				 <input type="text" name="message" value="" placeholder="Message" id="message"  /> 
+			</div>
+			
+			
+			
+			
+			 <!-- <div class="send"><a href="javascript:;" data-role="button" data-theme="a" data-iconpos="right" id="send-feedback1">Submit&nbsp;<i>sheoladh</i></a></div> -->
+			 <div class="send"><a href="mailto:djjenkins21@hotmail.com?Subject=App_Query" target="_top" data-role="button" data-theme="a" data-iconpos="right" id="send-feedback1">Submit&nbsp;<i>test mail</i></a></div> 
+			
+		</div><!-- //.contact-form -->
+			
+		</div>	
+			
+		
+	    </div> <!-- end of Content-->
+	<div data-role="footer" data-position="fixed" data-id="ac_footer" data-theme="a">
+		
+		<div data-role="navbar">
+		<ul id="buttonId8">								
+					<li id="add18">	<a href="#Events"   data-icon="check" data-role="button" >Imeachtaí </a></li>
+					<li  id= "add28">	<a href="#Classes" data-icon="edit" data-role="button">Ranganna</a></li>
+					<li  id= "add38">	<a href="#Facilities"   data-icon="gear" data-role="button">Áiseanna</a></li>
+					<li  id="add48">	<a  id="fade8" data-role="button" data-icon="arrow-r">Níos mó</a></li>
+					<li id= "add58">	<a  id="fade28" data-role="button" data-icon="back">Ar ais</a></li>
+					<li id= "add68">	<a href="#FindUs"   data-role="button" data-icon="search">Treoracha</a></li>
+					<li id= "add78">	<a href="#Membership"  data-icon="info" data-role="button" >Ballríocht</a></li>
+					<li id= "add88">	<a href="#Videos"   data-icon="star" data-role="button">Físeán</a></li>				
+				</ul>
+		</div>
+		</div>
+</div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+.splash1, #home,#irishClasses,#musicClasses, #setDanceClasses, #arasContact, #FindUs
+
+{
+text-align: center;
+background: url('../towersimage/crestbandw1.png') center center no-repeat;
+background-size:cover;
+/*background-color:#e0ffff;*/
+}
+
+#Events
+{
+text-align: center;
+background: url('../arasimage/Failtiu-2013.jpg') center center no-repeat;
+background-size:cover;
+/*background-color:#e0ffff;*/
+}
+
+#Classes,#Videos, #videoplayer
+{
+text-align: center;
+background: url('../arasimage/Grianan.jpg') center center no-repeat;
+background-size:cover;
+/*background-color:#e0ffff;
+background-color:#FFF8DC;*/
+}
+
+#Facilities
+{
+text-align: center;
+background: url('../arasimage/Seomra-Siamsa-2013.jpg') center center no-repeat;
+background-size:cover;
+/*background-color:#e0ffff;*/
+}
+
+
+#Membership
+{
+text-align: center;
+background: url('../arasimage/nohallaemail.jpg') center center no-repeat;
+background-size:cover;
+/*background-color:#e0ffff;*/
+}
+#videolist img 
+
+{
+width: 90%;
+}
+
+#videolist h3 
+
+{
+margin: 15px 0 5px 0;
+height: 35px;
+overflow : hidden;
+font-size: 1em;
+}
+
+#arasContact input{
+    color: #000000;
+}
+
+#home h1
+ {
+
+font-size: 1em;
+}
+
+ #home .ui-header .ui-title, 
+  #Events .ui-header .ui-title, 
+   #Classes .ui-header .ui-title, 
+    #Facilities .ui-header .ui-title, 
+     #FindUs .ui-header .ui-title, 
+      #Membership .ui-header .ui-title, 
+       #arasContact .ui-header .ui-title,
+        #irishClasses .ui-header .ui-title, 
+         #musicClasses .ui-header .ui-title, 
+          #setDanceClasses .ui-header .ui-title,
+           #Videos .ui-header .ui-title
+           
+{ 
+margin-left: 1em; margin-right: 1em; 
+}
+
+#splash .ui-header .ui-title 
+{ 
+margin-left: 1em; margin-right: 1em; 
+}
+
+#videolist a 
+{
+text-decoration: none;
+color: #ffffff;
+}
+
+#videoplayer iframe 
+{
+width: 100%;
+min-height: 50%;
+}
+
+.background
+{
+background-color:#606060;
+}
+
+
+.backgroundForm
+{
+background-color:#606060;
+-moz-border-radius: 15px;
+border-radius: 15px;
+}
+
+.backgroundVideo
+{
+
+margin:5px;
+padding:20px;
+padding-top:5px;
+background-color:#606060;
+-moz-border-radius: 10px;
+border-radius: 15px;
+}
+.ui-body
+{
+/*background-color:#ffffff;*/
+}
+
+.ui-body-a
+{
+background-color:#ffffff;
+/*this is the field colour*/
+}
+
+.ui-br
+{
+/*background-color:#ffffff;*/
+}
+
+/*.footer {
+position: fixed;
+z-index: 10;
+bottom: 0;
+width: 100%;
+}*/
+
+.homeImage
+{
+-moz-border-radius: 15px;
+border-radius: 15px;
+max-width:100%;
+}
+
+.forasImage
+{
+
+text-align: center;
+
+-moz-border-radius: 15px;
+border-radius: 15px;
+max-width:70%;
+
+}
+
+#content
+{
+
+
+min-height:200px;
+
+}
+
+.splashImage
+{
+-moz-border-radius: 15px;
+border-radius: 15px;
+max-width:100%;
+}
+
+#home
+
+{
+position : relative ;
+}
+
+#add5,#add6,#add7,#add8,
+#add51,#add61,#add71,#add81,
+#add52,#add62,#add72,#add82,
+#add53,#add63,#add73,#add83,
+#add54,#add64,#add74,#add84,
+#add55,#add65,#add75,#add85,
+#add56,#add66,#add76,#add86,
+#add57,#add67,#add77,#add87,
+#add58,#add68,#add78,#add88
+{
+display:none;
+}
