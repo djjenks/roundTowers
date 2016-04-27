@@ -408,7 +408,7 @@ console.log('test');
 
 $.ajax({
 		dataType: "json",
-		url: "https://public-api.wordpress.com/rest/v1.1/sites/djjenkins21.wordpress.com/posts/",
+		url: "https://public-api.wordpress.com/rest/v1.1/sites/mmcglynntowers.wordpress.com/posts/",
 		success: function( responseObject){
 												data = responseObject;
 												// data.posts[0].content
@@ -494,6 +494,10 @@ console.log("in listposts function");
 
 
 
+var LottoList="";
+var Results="";
+clubNews
+var clubNews="";
 
 
 
@@ -539,7 +543,7 @@ $("a",tempDiv).remove();
 var excerpt= tempDiv.innerHTML;
 
 
-if (category =='arasposts')
+if (category =='lotto')
 {
 console.log("each condition : "+i);
 //output+='<div class="background" data-role="collapsible">';
@@ -548,20 +552,20 @@ console.log("each condition : "+i);
 //output+='<p>'+excerpt+'</p>';
 //output+='<img src="'+val.thumbnail+'" width="90%" height="90%" alt ="'+val.title+'" />';
 //output+='</div>';
-output+=''+val.content+'';
+LottoList+=''+val.content+'';
 }
 
-if (category =='otherMusicClasses')
+if (category =='Results')
 {
-otherMusicClasses+=''+val.content+'';
+Results+=''+val.content+'';
 //otherMusicClasses+='<p>'+excerpt+'</p>';
 //otherMusicClasses+='<img src="'+val.thumbnail+'" width="90%" height="90%" alt ="'+val.title+'" />';
 }
 
-if (category =='classes')
+if (category =='clubNews')
 {
 //morningClasses+='<p>'+excerpt+'</p>';
-morningClasses+=''+val.content+'';
+clubNews+=''+val.content+'';
 //morningClasses+='<img src="'+val.thumbnail+'" width="90%" height="90%" alt ="'+val.title+'" />';
 }
 if (category =='eveningclasses')
@@ -627,7 +631,14 @@ whyJoin +="";
 howToApply +="";
 intensive +="";
 
-console.log(musicSessions);
+
+LottoList +="";
+Results +="";
+clubNews +="";
+clubNews
+
+
+console.log(LottoList);
 
 $('#eventsList').html(output);
 $('#morningClass').html(morningClasses);
@@ -642,6 +653,10 @@ $('#studioInfo').html(studioInfo);
 $('#venueHire').html(venueHire);
 $('#whyJoin').html(whyJoin);
 $('#howToApply').html(howToApply);
+
+$('#LottoList').html(LottoList);
+$('#Results').html(Results);
+$('#clubNews').html(clubNews);
 
 
 }

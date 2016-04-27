@@ -7,10 +7,10 @@ background-size:cover;
 /*background-color:#e0ffff;*/
 }
 
-#Events
+#Events,#Lotto
 {
 text-align: center;
-background: url('../towersimage/crestbandw1.png') center center no-repeat;
+/*background: url('../towersimage/crestbandw1.png') center center no-repeat;*/
 background-size:cover;
 /*background-color:#e0ffff;*/
 }
@@ -64,7 +64,7 @@ font-size: 1em;
 
 font-size: 1em;
 }
-
+#Lotto.ui-header .ui-title, 
  #home .ui-header .ui-title, 
   #Events .ui-header .ui-title, 
    #Classes .ui-header .ui-title, 
