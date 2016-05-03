@@ -32,7 +32,7 @@ $('#add1,#add2,#add3,#add4').fadeIn('slow');
 });
 
 //  new page control
-$( document ).delegate("#Events", "pageinit", function() {
+$( document ).delegate("#Lotto", "pageinit", function() {
   //windows.alert('A page with an id of "aboutPage" was just created by jQuery Mobile!');
   //window.alert("events")
  var a =document.getElementsByClassName('ui-icon-check');
@@ -63,7 +63,7 @@ $('#add11,#add21,#add31,#add41').fadeIn('slow');
 //
 
 //  new page control
-$( document ).delegate("#Classes", "pageinit", function() {
+$( document ).delegate("#Results", "pageinit", function() {
   //alert('A page with an id of "aboutPage" was just created by jQuery Mobile!');
  var c =document.getElementsByClassName('ui-icon-check');
 
@@ -94,7 +94,7 @@ $('#add12,#add22,#add32,#add42').fadeIn('slow');
 //
 
 //  new page control
-$( document ).delegate("#Facilities", "pageinit", function() {
+$( document ).delegate("#clubNews", "pageinit", function() {
   //alert('A page with an id of "aboutPage" was just created by jQuery Mobile!');
 var e =document.getElementsByClassName('ui-icon-check');
 
@@ -367,8 +367,7 @@ function getVids(pid){
 }); // ready close
 
 
-function playVideo1(id,title)
-{
+function playVideo1(id,title){
 	//window.alert("function finish");
 	var output5='<div class="backgroundVideo">';
 output5 += '<h3>' + title + '</h3>';
@@ -635,7 +634,7 @@ intensive +="";
 LottoList +="";
 Results +="";
 clubNews +="";
-clubNews
+
 
 
 console.log(LottoList);
@@ -655,8 +654,8 @@ $('#whyJoin').html(whyJoin);
 $('#howToApply').html(howToApply);
 
 $('#LottoList').html(LottoList);
-$('#Results').html(Results);
-$('#clubNews').html(clubNews);
+$('#Results_content').html(Results);
+$('#clubNews_content').html(clubNews);
 
 
 }

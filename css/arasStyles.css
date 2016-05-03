@@ -1,4 +1,4 @@
-.splash1, #home,#irishClasses,#musicClasses, #setDanceClasses, #arasContact, #FindUs
+.splash1,#irishClasses,#musicClasses, #setDanceClasses, #arasContact, #FindUs
 
 {
 text-align: center;
@@ -7,7 +7,7 @@ background-size:cover;
 /*background-color:#e0ffff;*/
 }
 
-#Events,#Lotto
+#Events,#Lotto,#Results,#home, #clubNews
 {
 text-align: center;
 /*background: url('../towersimage/crestbandw1.png') center center no-repeat;*/
@@ -75,7 +75,8 @@ font-size: 1em;
         #irishClasses .ui-header .ui-title, 
          #musicClasses .ui-header .ui-title, 
           #setDanceClasses .ui-header .ui-title,
-           #Videos .ui-header .ui-title
+           #Videos .ui-header .ui-title,
+		   
            
 { 
 margin-left: 1em; margin-right: 1em; 
@@ -100,13 +101,13 @@ min-height: 50%;
 
 .background
 {
-background-color:#606060;
+background-color:#ffffff;
 }
 
 
 .backgroundForm
 {
-background-color:#606060;
+background-color:#ffffff;
 -moz-border-radius: 15px;
 border-radius: 15px;
 }
@@ -117,7 +118,7 @@ border-radius: 15px;
 margin:5px;
 padding:20px;
 padding-top:5px;
-background-color:#606060;
+background-color:#ffffff;
 -moz-border-radius: 10px;
 border-radius: 15px;
 }
