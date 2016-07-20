@@ -7,7 +7,7 @@ background-size:cover;
 /*background-color:#e0ffff;*/
 }
 
-#Events,#Lotto,#Results,#home, #clubNews
+#Events,#Lotto,#Results,#home, #clubNews,#socialMedia
 {
 text-align: center;
 background: transparent url('../towersimage/actionshot.jpg') center center no-repeat;

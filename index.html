@@ -65,9 +65,10 @@ xmlns:fb="https://www.facebook.com/2008/fbml">
 			<img class="homeImage" src="towersimage/Clubcrest.jpg" alt="Big Boat"> 	
 
 				<div data-role="controlgroup">	
+				
+				<a href="#clubNews" data-icon="plus" data-role="button" >Upcoming Events&nbsp;</a>
 				<a href="#Lotto" data-icon="plus" data-role="button" >Lotto&nbsp;</a>	
-				<a href="#Results"  data-icon="plus"data-role="button" >Results&nbsp;</a>	
-				<a href="#clubNews" data-icon="plus" data-role="button" >Club News&nbsp;</a>
+				<a href="#Results"  data-icon="plus"data-role="button" >Reports&nbsp;</a>	
 				<a href="#socialMedia" data-icon="plus" data-role="button" >SocialMedia&nbsp;</a>	
 			</div>
 	    </div>
@@ -76,12 +77,11 @@ xmlns:fb="https://www.facebook.com/2008/fbml">
 		 <div data-role="footer" data-position="fixed" data-id="ac_footer" data-theme="a"  >
 		
 			<div data-role="navbar">
-				<ul id="buttonId">
-					<li  id= "add3">	<a href="#clubNews"   data-icon="gear" data-role="button">Upcoming Events</a></li>
+				<ul id="buttonId">				
 					<li id="add1">	<a href="#Lotto"   data-icon="check" data-role="button" >Lotto</a></li>
-					<li  id= "add2">	<a href="#Results" data-icon="edit" data-role="button">Reports</a></li>
-					
-					<li  id="add4">	<a  id="#socialMedia" data-role="button" data-icon="arrow-r">Social Media</a></li>
+					<li  id= "add2">	<a href="#Results" data-icon="edit" data-role="button">Reports</a></li>	
+					<li  id= "add3">	<a href="#clubNews"   data-icon="gear" data-role="button">Upcoming Events</a></li>
+					<li  id="add4">	<a  href="#socialMedia" data-role="button" data-icon="arrow-r">Social Media</a></li>
 					<li id= "add5">	<a  id="#" data-role="button" data-icon="back">Place</a></li>
 					<li id= "add6">	<a href="#"   data-role="button" data-icon="search">Place</a></li>
 					<li id= "add7">	<a href="#"  data-icon="info" data-role="button" >Place</a></li>
@@ -239,7 +239,7 @@ xmlns:fb="https://www.facebook.com/2008/fbml">
 
 <!--  Membership screen page -->
 
-<div data-role="page" id="Membership" data-theme="a">
+<div data-role="page" id="socialMedia" data-theme="a">
 	
 	<div data-role="header" data-position="fixed" data-id="ac_header" data-theme="a">
 		<h1>Membership&nbsp;<i>Ballríocht</i></h1>
@@ -248,22 +248,23 @@ xmlns:fb="https://www.facebook.com/2008/fbml">
 	
 	
 	<div data-role="content">
-		<img class="homeImage" src="arasimage/aclogo.png" alt="Big Boat"> 
 	
-				<div data-role="collapsible-set">
-					<div class="background"data-role="collapsible">
-						<h3>Why Join?&nbsp;<i>Cén fáth a bheith páirteach</i></h3>
-						<div  id="whyJoin">
+				<div data-role="collapsible-set"  >
+					<div class="background" data-role="collapsible" data-collapsed="false">
+						<h3>Social Media Links?&nbsp;<i></i></h3>
+						<div  id="">
+						
+						<img class="homeImage" src="towersimage/facebook.png" alt="Big Boat"> 
+						</div>
+						<div  id="">
+						<img class="homeImage" src="towersimage/twitter.png" alt="Big Boat">
+						
 						</div>	
 					</div>
-					<div class="background" data-role="collapsible">
-						<h3>How to apply&nbsp;<i>Conas iarratas a dhéanamh</i></h3>
-						<div  id="howToApply">
-						</div>
-					</div>	
+					
 					
 
-					<a href="mailto:djjenkins21@hotmail.com?Subject=App_Query" target="_top" data-role="button" data-theme="a" data-iconpos="right" id="send-feedback1">Contact us&nbsp;<i>Déan teagmháil linn</i></a>	
+					
 
 	
 				</div> <!-- end collapsible set-->	
