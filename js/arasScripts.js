@@ -4,6 +4,10 @@ $( document ).delegate("#videoplayer", "pageinit", function() { });
 //  new page control
 $( document ).delegate("#home", "pageinit", function() {
   //alert('A page with an id of "aboutPage" was just created by jQuery Mobile!');
+  
+     setupPages();
+	location.reload(true);
+  
  var x =document.getElementsByClassName('ui-icon-check');
 console.log(x);
 $(x).removeClass('ui-icon-check').addClass('icon-music');
@@ -35,6 +39,10 @@ $('#add1,#add2,#add3,#add4').fadeIn('slow');
 $( document ).delegate("#Lotto", "pageinit", function() {
   //windows.alert('A page with an id of "aboutPage" was just created by jQuery Mobile!');
   //window.alert("events")
+  
+    setupPages();
+	location.reload(true);
+  
  var a =document.getElementsByClassName('ui-icon-check');
 
 $(a).removeClass('ui-icon-check').addClass('icon-music');
@@ -65,6 +73,10 @@ $('#add11,#add21,#add31,#add41').fadeIn('slow');
 //  new page control
 $( document ).delegate("#Results", "pageinit", function() {
   //alert('A page with an id of "aboutPage" was just created by jQuery Mobile!');
+  
+    setupPages();
+	location.reload(true);
+  
  var c =document.getElementsByClassName('ui-icon-check');
 
 $(c).removeClass('ui-icon-check').addClass('icon-music');
@@ -96,6 +108,10 @@ $('#add12,#add22,#add32,#add42').fadeIn('slow');
 //  new page control
 $( document ).delegate("#clubNews", "pageinit", function() {
   //alert('A page with an id of "aboutPage" was just created by jQuery Mobile!');
+  
+    setupPages();
+	location.reload(true);
+  
 var e =document.getElementsByClassName('ui-icon-check');
 
 $(e).removeClass('ui-icon-check').addClass('icon-music');
@@ -126,6 +142,10 @@ $('#add13,#add23,#add33,#add43').fadeIn('slow');
 //  new page control
 $( document ).delegate("#socialMedia", "pageinit", function() {
   //alert('A page with an id of "aboutPage" was just created by jQuery Mobile!');
+  
+    setupPages();
+	location.reload(true);
+  
   var g =document.getElementsByClassName('ui-icon-check');
 
 $(g).removeClass('ui-icon-check').addClass('icon-music');
@@ -156,6 +176,9 @@ $('#add14,#add24,#add34,#add44').fadeIn('slow');
 //  new page control
 $( document ).delegate("#FindUs", "pageinit", function() {
   //alert('A page with an id of "aboutPage" was just created by jQuery Mobile!');
+  
+    setupPages();
+  
   var i =document.getElementsByClassName('ui-icon-check');
 
 $(i).removeClass('ui-icon-check').addClass('icon-music');
@@ -554,7 +577,7 @@ console.log("each condition : "+i);
 LottoList+=''+val.content+'';
 }
 
-if (category =='Results')
+if (category =='Upcoming')
 {
 Results+=''+val.content+'';
 //otherMusicClasses+='<p>'+excerpt+'</p>';
@@ -654,7 +677,7 @@ $('#whyJoin').html(whyJoin);
 $('#howToApply').html(howToApply);
 
 $('#LottoList').html(LottoList);
-$('#Results_content').html(Results);
+$('#upcoming_content').html(Results);
 $('#clubNews_content').html(clubNews);
 
 
