@@ -138,7 +138,6 @@ $('#add13,#add23,#add33,#add43').fadeIn('slow');
 //  new page control
 $( document ).delegate("#socialMedia", "pageinit", function() {
   //alert('A page with an id of "aboutPage" was just created by jQuery Mobile!');
-  
 
   
   var g =document.getElementsByClassName('ui-icon-check');
