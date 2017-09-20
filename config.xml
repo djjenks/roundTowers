@@ -3,10 +3,8 @@
 <name>Round Towers</name>
 <preference name="phonegap-version" value="3.0.0" />
 <splash src="splash.png" />
-<icon src="icon.png" />
-
-<platform name="ios">
-  <icon src="icon.png" width="180" height="180" />
-</platform>
+<icon src="icon.png" platform="android" />
+<icon src="icon.png" platform="windows" />
+<icon src="icon.png" platform="ios" />
 
 </widget>
