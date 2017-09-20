@@ -5,6 +5,6 @@
 <splash src="splash.png" />
 <icon src="icon.png" platform="android" />
 <icon src="icon.png" platform="windows" />
-<icon src="icon.png" platform="ios" />
+<icon src="icon_ios_v2.png" platform="ios" width="120" height="120" />
 
 </widget>
