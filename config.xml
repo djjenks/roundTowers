@@ -2,9 +2,9 @@
 <widget xmlns = "http://www.w3.org/ns/widgets" xmlns:gap = "http://phonegap.com/ns/1.0" xmlns:android   = "http://schemas.android.com/apk/res/android" id = "com.hardeep.roundtowers" versionCode = "11" version   = "1.0.11">
 <name>Round Towers</name>
 <preference name="phonegap-version" value="cli-6.5.0" />
-<icon src="icon.png" platform="android" />
+<!-- <icon src="icon.png" platform="android" />
 <icon src="icon.png" platform="windows" />
-<icon src="Icon57x57.png" platform="ios" width="57" height="57" />
+<icon src="Icon57x57.png" platform="ios" width="57" height="57" /> -->
 
 
 </widget>
