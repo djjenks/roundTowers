@@ -37,7 +37,7 @@ Settings Icon
         <!-- iOS 7.0+ -->
         <!-- iPhone / iPod Touch  -->
 <icon src="www/res/icons/ios/AppIcon/Icon-App-60x60@1x.png" platform="ios" width="60" height="60" />
-<icon src="res/icons/ios/AppIcon/Icon-App-60x60@2x.png" platform="ios" width="120" height="120" />
+<icon src="www/res/icons/ios/AppIcon/Icon-App-60x60@2x.png" platform="ios" width="120" height="120" />
 
 
 <icon src="www/res/icons/ios/AppIcon/Icon-76.png" platform="ios" width="76" height="76" />
