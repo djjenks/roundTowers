@@ -9,12 +9,12 @@
 
  <access origin="*"></access>
  
-<allow-navigation href="https://www.facebook.com/*" />
+<allow-navigation href="https://www.facebook.com/roundtowerclondalkin/*" />
 <allow-navigation href="https://twitter.com/*" />
 <allow-navigation href="https://www.flickr.com/photos/*" /> 
 <allow-navigation href="https://www.locallotto.ie/*" />
 	
-<allow-intent href="https://www.facebook.com/*" />
+<allow-intent href="https://www.facebook.com/roundtowerclondalkin/*" />
 <allow-intent href="https://twitter.com/*" />
 <allow-intent href="https://www.flickr.com/photos/*" /> 
 <allow-intent href="https://www.locallotto.ie/*" />
