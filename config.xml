@@ -5,7 +5,25 @@
 <preference name='phonegap-version' value='cli-7.1.0' />
 <preference name='pgb-builder-version' value='2' />
 
-<allow-navigation href="https://public-api.wordpress.com/*" />
+<!-- <plugin name="cordova-plugin-whitelist" spec="~1.3.3" /> -->
+
+ <access origin="*"></access>
+ 
+ <allow-navigation href="https://public-api.wordpress.com/rest/v1.1/sites/mmcglynntowers.wordpress.com/posts/" />
+ <allow-navigation href="https://www.facebook.com/roundtowerclondalkin/" />
+  <allow-navigation href="https://twitter.com/RTowersTracker" />
+  <allow-navigation href="https://twitter.com/roundtowers" />
+   <allow-navigation href="https://www.flickr.com/photos/roundtowers/" />
+    <allow-navigation href="https://www.locallotto.ie/play_newa.asp?ll_id=765" />
+	
+ <allow-intent href="https://www.facebook.com/roundtowerclondalkin/" />
+  <allow-intent href="https://twitter.com/RTowersTracker" />
+  <allow-intent href="https://twitter.com/roundtowers" />
+   <allow-intent href="https://www.flickr.com/photos/roundtowers/" />
+    <allow-intent href="https://www.locallotto.ie/play_newa.asp?ll_id=765" />
+  
+
+
 
 
 
