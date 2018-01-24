@@ -420,7 +420,7 @@ var category1 = "";
 //window.alert("height of the page is");
 //window.alert(data.ip)
 console.log('test');
-window.alert("sometext");
+
 console.log('test2');
 
 
