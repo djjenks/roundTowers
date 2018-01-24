@@ -420,12 +420,15 @@ var category1 = "";
 //window.alert("height of the page is");
 //window.alert(data.ip)
 console.log('test');
+window.alert("sometext");
+console.log('test2');
 
 
 $.ajax({
 		dataType: "json",
 		url: "https://public-api.wordpress.com/rest/v1.1/sites/mmcglynntowers.wordpress.com/posts/",
 		success: function( responseObject){
+			console.log('testSUCCESS');
 												data = responseObject;
 												// data.posts[0].content
 												console.log(data.posts[0].content ) ;
