@@ -5,6 +5,9 @@
 <preference name='phonegap-version' value='cli-7.1.0' />
 <preference name='pgb-builder-version' value='2' />
 
+<allow-navigation href="http://*/*" />
+<allow-navigation href="https://*/*" />
+
 
 <icon src="icon.png" platform="ios" width="57" height="57"/>
 <icon src="icon.png" platform="android" width="57" height="57"/>
