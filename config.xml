@@ -88,6 +88,8 @@ Settings Icon
         <icon src="www/res/icons/ios/AppIcon/Icon-App-50x50@2x.png" platform="ios" width="100" height="100" />
         <!-- iPad Pro -->
         <icon src="www/res/icons/ios/AppIcon/Icon-App-83.5x83.5@2x.png" platform="ios" width="167" height="167" />
+		
+		<icon src="www/res/icons/ios/AppIcon/ItunesArtwork@2x.png" platform="ios" width="1024" height="1024" />
 
 
 
