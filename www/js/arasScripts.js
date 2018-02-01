@@ -680,3 +680,20 @@ $('#clubNews_content').html(clubNews);
 
 }
 }
+
+
+function lottoUrl()
+{
+	console.log("Success...");
+	
+
+	window.open('https://www.locallotto.ie/play_newa.asp?ll_id=765', '_system', 'location=yes'); 
+	return false;
+    console.log("window.open works well");
+
+	
+
+
+	
+
+}
