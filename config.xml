@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns = "http://www.w3.org/ns/widgets" xmlns:gap = "http://phonegap.com/ns/1.0" xmlns:android   = "http://schemas.android.com/apk/res/android" id = "com.hardeep.roundtowers" versionCode = "16" version   = "1.0.16">
+<widget xmlns = "http://www.w3.org/ns/widgets" xmlns:gap = "http://phonegap.com/ns/1.0" xmlns:android   = "http://schemas.android.com/apk/res/android" id = "com.hardeep.roundtowers" versionCode = "17" version   = "1.0.17">
 <name>Round Towers</name>
+
+<!-- February 20 02 2018 Release build -->
+
+
 <!-- <preference name="phonegap-version" value="cli-6.5.0" /> -->
 <preference name='phonegap-version' value='cli-7.1.0' />
 <preference name='pgb-builder-version' value='2' />
